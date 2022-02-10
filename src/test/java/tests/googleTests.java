@@ -57,8 +57,8 @@ public class googleTests {
     public void test4() throws InterruptedException {
         driver.get("http://google.com");
         searchPage.search("Калькулятор");
-        driver.findElement(By.cssSelector("#rso .TIGsTb")).click();
-        driver.findElement(By.cssSelector("#rso .jlkklc")).sendKeys("6/0=",ENTER);
+        driver.findElement(By.cssSelector("#rso div[jsname*='aN1RFf']")).click();
+        driver.findElement(By.cssSelector("#rso .jlkklc")).sendKeys("=");
         Thread.sleep(1000);
     }
 
