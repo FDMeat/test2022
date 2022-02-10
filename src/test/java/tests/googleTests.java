@@ -28,15 +28,9 @@ public class googleTests {
         driver = new ChromeDriver(options);
         searchPage = new SearchPage(driver);
     }
-        @Test
-        public void test1() {
-            driver.get("http://google.com");
-            searchPage.search("selenium");
-            assertEquals(12, searchPage.results.size());
-        }
 
         @Test
-        public void test2() throws InterruptedException {
+        public void test1() throws InterruptedException {
         driver.get("http://google.com");
         searchPage.search("Калькулятор");
         driver.findElement(By.cssSelector("#rso .TIGsTb")).click();
@@ -45,7 +39,7 @@ public class googleTests {
         }
 
     @Test
-    public void test3() throws InterruptedException {
+    public void test2() throws InterruptedException {
         driver.get("http://google.com");
         searchPage.search("Калькулятор");
         driver.findElement(By.cssSelector("#rso .TIGsTb")).click();
@@ -54,7 +48,7 @@ public class googleTests {
     }
 
     @Test
-    public void test4() throws InterruptedException {
+    public void test3() throws InterruptedException {
         driver.get("http://google.com");
         searchPage.search("Калькулятор");
         driver.findElement(By.cssSelector("#rso div[jsname*='aN1RFf']")).click();
