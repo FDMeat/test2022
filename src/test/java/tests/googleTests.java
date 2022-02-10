@@ -44,7 +44,23 @@ public class googleTests {
         Thread.sleep(1000);
         }
 
+    @Test
+    public void test3() throws InterruptedException {
+        driver.get("http://google.com");
+        searchPage.search("Калькулятор");
+        driver.findElement(By.cssSelector("#rso .TIGsTb")).click();
+        driver.findElement(By.cssSelector("#rso .jlkklc")).sendKeys("6/0=",ENTER);
+        Thread.sleep(1000);
+    }
 
+    @Test
+    public void test4() throws InterruptedException {
+        driver.get("http://google.com");
+        searchPage.search("Калькулятор");
+        driver.findElement(By.cssSelector("#rso .TIGsTb")).click();
+        driver.findElement(By.cssSelector("#rso .jlkklc")).sendKeys("6/0=",ENTER);
+        Thread.sleep(1000);
+    }
 
     @AfterAll
     public static void teardown(){
