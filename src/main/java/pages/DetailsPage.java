@@ -1,5 +1,6 @@
 package pages;
 
+import org.checkerframework.checker.units.qual.Time;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,13 +24,5 @@ public class DetailsPage {
         initElements(driver, this);
     }
 
-    public String getLastVersion() {
-        lastVersion.getText();
-    }
-
-    public String getLicense() {
-        license.getText();
-
-    }
 }
 
